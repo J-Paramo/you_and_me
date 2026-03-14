@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>For Lily ❤️</title>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+
+         <!-- INICIO -->
+        <div id="inicio">
+            <h2 class="mb-4">Hola, Corazón de Melón 💖</h2>
+            <h5 class="mb-4">Primero que nada, toca el corazón</h5>
+
+            <button class="heart-btn" onclick="mostrar()">
+                ❤️
+            </button>
+
+            <p id="mensaje" class="mt-4 fs-4 text-danger" style="display:none;">
+                I LOVE YOU SO MUCH 💌
+            </p>
+        </div>
+
+        <!-- FORM -->
+        <div id="formulario" style="display:none;">
+            <h4>Segundo... </h4>
+            <h5>Preciona para ver cuales son las ganadoras🍿🎬</h5>
+
+            <div id="mensaje-ruleta" style="font-weight:bold; font-size:1.2rem; color:#ff4d6d; margin-bottom:10px; display:none;">
+                Eligiendo... 🎬💌
+            </div>
+
+            <div class="roulette" id="resultado">
+            </div>
+            <p id="mensaje-compartir"></p>
+
+            <div id="boton-div">
+                <button class="spin-btn" onclick="girar()">VER 💌</button>
+            </div>
+        </div>
+
+        <script src="js/functions.js"></script>
+
+    </body>
+</html>

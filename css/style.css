@@ -1,0 +1,90 @@
+        body {
+            background: #ffe6f0;
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            padding-top: 80px;
+        }
+
+        .heart-btn, .spin-btn {
+            background: linear-gradient(45deg,#ff4d6d,#ff758f);
+            border: none;
+            border-radius: 50px;
+            padding: 20px 50px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 15px;
+        }
+
+        .heart-btn:hover, .spin-btn:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px rgba(255,0,100,0.6);
+        }
+
+       .roulette {
+            background: #fff0f6;
+            border-radius: 20px;
+            padding: 30px;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(255,0,100,0.3);
+            font-size: 1.5rem;
+            color: #ff4d6d;
+            min-width: 300px;
+            min-height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .resaltado {
+            background: linear-gradient(45deg,#ff4d6d,#ff758f);
+            color: white;
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            animation: pop 0.5s ease forwards;
+        }
+
+        @keyframes pop {
+            0% { transform: scale(0); opacity: 0;}
+            60% { transform: scale(1.2); opacity: 1;}
+            100% { transform: scale(1); }
+        }
+
+        .fadeOut {
+            animation: fadeOut 1s ease forwards;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity:1; transform: scale(1);}
+            100% { opacity:0; transform: scale(0.5);}
+        }
+
+       .particula {
+            position: absolute;
+            font-size: 20px;
+            opacity: 1;
+            animation: estallar 1s forwards;
+        }
+
+        @keyframes estallar {
+            0%   { transform: translate(0,0) scale(1); opacity: 1; }
+            100% { transform: translate(var(--x), var(--y)) scale(0.5); opacity: 0; }
+        }
+
+        @keyframes palpitar {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.5); }
+        }
+
+        .palpitar {
+            display: inline-block;
+            animation: palpitar 0.5s infinite;
+            color: #ff4d6d;
+            font-weight: bold;
+        }
