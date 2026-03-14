@@ -2,19 +2,20 @@
             background: #ffe6f0;
             text-align: center;
             font-family: 'Segoe UI', sans-serif;
-            padding-top: 80px;
+            padding-top: 5rem;
+            font-size: 1rem;
         }
 
         .heart-btn, .spin-btn {
             background: linear-gradient(45deg,#ff4d6d,#ff758f);
             border: none;
             border-radius: 50px;
-            padding: 20px 50px;
+            padding: 1.5rem 3rem;
             color: white;
             font-size: 40px;
             cursor: pointer;
             transition: 0.3s;
-            margin: 15px;
+            margin: 1rem;
         }
 
         .heart-btn:hover, .spin-btn:hover {
@@ -27,12 +28,12 @@
             border-radius: 20px;
             padding: 30px;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 1rem;
             box-shadow: 0 0 15px rgba(255,0,100,0.3);
             font-size: 1.5rem;
             color: #ff4d6d;
-            min-width: 300px;
-            min-height: 80px;
+            min-width: 80%;
+            min-height: 5rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,7 +44,7 @@
         .resaltado {
             background: linear-gradient(45deg,#ff4d6d,#ff758f);
             color: white;
-            padding: 15px;
+            padding: 1rem;
             border-radius: 20px;
             font-size: 2rem;
             font-weight: bold;
