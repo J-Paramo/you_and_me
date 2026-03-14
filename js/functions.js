@@ -12,7 +12,10 @@
         }, 2000); 
     }
 
-    let peliculasElegidas = ['Pelicula 1 mensaje','Pelicula 2 mensaje','Pelicula 3 mensaje','Pelicula 4 mensaje'];
+    let peliculasElegidas = ['Jurassic World Rebirth',
+                             'Labor Day',
+                             'La celda de los Milagros',
+                             'Woman in Cabin 10'];
 
     function mostrar() {
         document.querySelector("#inicio h2").style.display = "none";
