@@ -1,17 +1,4 @@
 
-    function mostrar(){
-        document.querySelector("#inicio h2").style.display = "none";
-        document.querySelector("#inicio h5").style.display = "none";
-        document.querySelector(".heart-btn").style.display = "none";
-
-        document.getElementById("mensaje").style.display = "block";
-
-        setTimeout(() => {
-            document.getElementById("mensaje").style.display = "none";
-            document.getElementById("formulario").style.display = "block";
-        }, 2000); 
-    }
-
     let peliculasElegidas = ['Jurassic World Rebirth',
                              'Labor Day',
                              'La celda de los Milagros',
